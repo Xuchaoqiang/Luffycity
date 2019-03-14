@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <!--
+        css的选择器：1.基本选择器 2.高级选择器
+
+        1.标签选择器
+            标签选择器可以选中所有的标签，比如div，ul，li，p等
+            不管标签藏的多深，都可以选中
+            选中的是所有的，而不是某一个，所以说‘共性’而不是‘特性’
+
+        2.id选择器
+            # 选中id
+
+            同一个页面中id不能重复
+            任何的标签都可以设置ID
+            id命名规范 要以字母 可以有数字 下划线 -
+
+        3.类选择器
+            1.所谓类就是class .  class与id非常相似  任何的标签都可以加类
+            但是类是可以重复 归类
+            2.同一个标签中可以携带多个类 用空格隔开
+
+            一定要有‘公共类’的概念
+            总结：
+            1.不要试图区用一个类将我们的页面写完。这个标签要携带多个类，共同设置样式
+            2.每个类要尽可能小，有公共概念，能够让更多的标签使用
+    -->
+
+    div>p*3
+
+    <div class="big col">
+        我是段落1
+    </div>
+
+    <div id="d2" class="col under">
+        我是段落2
+    </div>
+
+    <div class="under big">
+        我是段落3
+    </div>
+
+</body>
+</html>

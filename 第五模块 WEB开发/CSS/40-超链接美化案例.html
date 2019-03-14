@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接梅花</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav{
+            width: 960px;
+            margin: 50px auto 0;
+            background: purple;
+            border-radius: 5px;
+        }
+
+        .clearfix:after{
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .nav ul{
+            list-style: none;
+        }
+
+        .nav ul li{
+            float: left;
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .nav ul li a{
+            color: white;
+            display: block;
+            width: 160px;
+            height: 40px;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: "Microsoft Yahei";
+        }
+
+        .nav ul li a:hover{
+            font-size: 22px;
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav clearfix">
+        <ul>
+        <li><a href="#">导航菜单</a></li>
+        <li><a href="#">导航菜单</a></li>
+        <li><a href="#">导航菜单</a></li>
+        <li><a href="#">导航菜单</a></li>
+        <li><a href="#">导航菜单</a></li>
+        <li><a href="#">导航菜单</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

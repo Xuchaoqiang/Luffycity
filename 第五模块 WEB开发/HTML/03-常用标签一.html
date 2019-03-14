@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用标签一</title>
+</head>
+<body>
+        <div class="p1">
+            <p style="height: 2000px" id="p1">顶部</p>
+            <!--段落标签-->
+            <p>通过系统科学的实战项目训练，零基础6个月炼成为行业抢手技术人才</p>
+            <p>通过系统科学的实战项目训练，零基础6个月炼成为行业抢手技术人才</p>
+        </div>
+        <!--body相关标签-->
+
+        <div class="heading">
+            <!--heading:标签h1-h6 没有h7标签-->
+            <!--块级元素：独占一行-->
+            <h1>路飞学城</h1><h2>路飞学城</h2>
+            <h3>路飞学城</h3>
+            <h4>路飞学城</h4>
+            <h5>路飞学城</h5>
+            <h6>路飞学城</h6>
+        </div>
+
+
+        <div class="anchor">
+            <!--a标签属于行内元素：在一 行内显示--    设置宽高无效果>
+            <!--a标签：超链接
+            _self:默认值，在当前网页打开资源
+            _blank:在新的网页打开资源-->
+            <a href="https://www.luffycity.com" target="_blank" title="luffy">路飞学城</a>
+            <!--还有跳转下载  邮箱联系-->
+
+            <!--返回页面顶部的内容-->
+            <a href="#">顶转到顶部</a>>
+            <!--返回某个id-->
+            <a href="#p1">跳转到顶部id</a>
+
+            <!--javascript:时表示在触发<a>默认动作时，执行一段Javascript代码，
+            而javascript:;表示什么都不执行，这样点击<a>时就没有任何反应-->
+            <a href="javascript:alert(1)">内容</a>
+            <a href="javascript:;">内容</a>
+        </div>
+
+        <div class="lists">
+            <!--ul 无序列表-->
+            <ul>
+                <li>我的账户&nbsp;&nbsp;&gt;</li>
+                <li>我的订单&nbsp;&nbsp;&gt;</li>
+                <li>我的优惠卷&nbsp;&gt;</li>
+                <li>我的收藏&nbsp;&gt;</li>
+                <li>退出&nbsp;&nbsp;&nbsp;&gt;</li>
+            </ul>
+            <!--ol 无序列表-->
+            <ol type="1">
+                <li>我的账户</li>
+                <li>我的订单</li>
+                <li>我的优惠卷</li>
+                <li>我的收藏</li>
+                <li>退出</li>
+            </ol>
+        </div>
+
+        <div class="img">
+            <div>
+                <a href="https://www.luffycity.com/home" title="home">
+                <img src="img1.png">
+                </a>
+            </div>
+            <div>
+                <img src="img2.png">
+            </div>
+        </div>
+
+
+</body>
+</html>

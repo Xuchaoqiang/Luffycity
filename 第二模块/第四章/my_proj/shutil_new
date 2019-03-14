@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+# Author:Irving
+
+# 高级的 文件、文件夹、压缩包 处理模块
+
+import shutil
+
+# 将文件内容拷贝到另一个文件中, 需要手段open
+shutil.copyfileobj(open('shutil模块.py', 'r', encoding='utf-8'), open('shutil_new', 'w', encoding='utf-8'))

@@ -1,0 +1,661 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+/*清除浮动*/
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/*页面最顶层*/
+.topBar{
+    width: 100%;
+    background-color: #333333;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*最顶层的内容*/
+.container{
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+/*顶层导航*/
+.top_nav{
+    line-height: 40px;
+    float: left;
+    height: 40px;
+}
+
+.top_nav a {
+    float: left;
+    text-decoration: none;
+    font-size: 12px;
+    margin: auto 0;
+    font-family: sans-serif;
+}
+
+.top_nav a:link, .user_info a:link{
+    color: #b0b0b0;
+}
+
+.top_nav a:hover, .user_info a:hover{
+    color: white;
+}
+
+/*顶层用户操作栏*/
+.user_info{
+    margin-right: 30px;
+    float: right;
+    height: 40px;
+    position: relative;
+}
+
+.user_info a{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.user_info span{
+    font-size: 12px;
+    color: #424242;
+}
+
+/*顶层导航分隔符*/
+.sep{
+    float: left;
+    margin: 0 0.5em;
+    font-size: 12px;
+    color: #424242;
+}
+
+/*顶层购物车*/
+.shop_cart {
+    height: 40px;
+    width: 120px;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+}
+
+.shop_cart a{
+    display: block;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.shop_cart span{
+    float: left;
+    display: block;
+    padding-left: 10px;
+}
+
+.shop_cart img{
+    float: left;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 10px 0 0 5px;
+}
+
+.shop_cart:hover{
+    background: white;
+}
+
+.shop_cart a:hover{
+    color: #FF6700;
+}
+
+/*导航栏logo*/
+.header{
+    position: relative;
+    margin: 0 auto;
+    width: 1226px;
+    height: 100px;
+}
+
+.header_logo{
+    float: left;
+    padding-top: 22px;
+    width: 62px;
+}
+
+/*导航栏*/
+.nav{
+    float: left;
+    height: 100px;
+    width: 850px;
+    position: relative;
+}
+
+.nav_list{
+    float: left;
+    width: 820px;
+    height: 88px;
+    padding: 12px 0 0 172px;
+
+}
+
+.nav_list ul li a{
+    text-decoration: none;
+    color: #424242;
+}
+
+.nav_list ul li a:hover{
+    color: #FF6700;
+}
+
+.nav_list ul li{
+    float: left;
+    padding: 26px 10px 38px;
+    font-size: 16px;
+}
+
+/*模拟input输入框*/
+.search_text{
+    position: absolute;
+    top: 25px;
+    right: 51px;
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+}
+
+/*模拟input按钮*/
+.search_btn{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 52px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    background: url("../images/lookup.png") #fff no-repeat center;
+}
+
+.search_text:hover{
+    border: 1px solid #b0b0b0;
+}
+
+.search_btn:hover{
+    background-color: #FF6700;
+}
+
+.search_hot_key{
+    font-size: 12px;
+    color: #424242;
+    text-decoration: none;
+    float: right;
+    margin-top: 16px;
+    padding: 0 5px 0 5px;
+    background-color: #e0e0e0;
+}
+
+.search_hot_key:hover{
+    color: white;
+    background-color: orangered;
+}
+
+/*右侧悬浮框*/
+.right_float{
+    width: 82px;
+    height: 360px;
+    position: fixed;
+    top: 230px;
+    right: 0;
+    font-size: 13px;
+}
+
+.float1 a, .float2 a, .float3 a, .float4 a{
+    text-decoration: none;
+    color: #b0b0b0;
+    line-height: 5px;
+}
+
+.float1 a span, .float2 a span, .float3 a span , .float4 a span{
+    display: block;
+}
+
+.float1, .float2, .float3, .float4{
+    float: left;
+    width: 82px;
+    height: 90px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.float1 a img, .float2 a img, .float2 a img, .float3 a img, .float4 a img{
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.float1 a:hover, .float2 a:hover, .float3 a:hover, .float4 a:hover{
+    color: #FF6700;
+}
+
+/*主体内容*/
+.home{
+    position: relative;
+    width: 1226px;
+    height: 460px;
+    background-image: url("../images/bg.jpg");
+    margin: 0 auto;
+}
+
+/*轮播图的左右箭头,用雪碧图技术*/
+.left_side{
+    position: absolute;
+    left: 234px;
+    bottom: 195.5px;
+    float:left;
+    width: 41px;
+    height: 69px;
+    background: url("../images/icon-slides.png") ;
+    background-repeat: no-repeat;
+    background-position: -83px 0;
+}
+
+.right_side{
+    position: absolute;
+    right: 0;
+    bottom: 195.5px;
+    float:right;
+    width: 41px;
+    height: 69px;
+    background-image: url("../images/icon-slides.png");
+    background-repeat: no-repeat;
+    background-position: -125px 0;
+}
+
+.left_side a{
+    width: 41px;
+    height: 69px;
+    line-height: 69px;
+    display: block;
+}
+
+.right_side a{
+    width: 41px;
+    height: 69px;
+    line-height: 69px;
+    display: block;
+}
+
+.left_side a:hover{
+    background-image: url("../images/icon-slides.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.right_side a:hover{
+    background-image: url("../images/icon-slides.png");
+    background-repeat: no-repeat;
+    background-position: -42px 0;
+ }
+
+.product_list{
+    width: 234px;
+    height: 460px;
+    background-color: #023F31;
+}
+
+.product_list ul{
+    padding: 20px 0 20px 0;
+}
+
+.product_list ul li{
+    width: 234px;
+    height: 42px;
+    text-align: left;
+    line-height: 42px;
+    font-size: 14px;
+    color: white;
+    background: url("../images/right.png") no-repeat right center;
+
+}
+
+.product_list ul li a{
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    line-height: 40px;
+}
+
+.product_list ul li a:hover{
+    background-color: #FF6700;
+    position: relative;
+}
+
+/*手机频道*/
+.home_hero{
+    position: relative;
+    width: 1226px;
+    height: 170px;
+    margin: 15px auto 0;
+}
+
+.home_channel_list{
+    float: left;
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+    margin: 0;
+}
+
+.home_channel_list li{
+    float: left;
+    width: 70px;
+    height: 82px;
+    padding: 0 4px;
+    background: url("../images/git.png") no-repeat center;
+}
+
+.home_channel_list li a{
+    display: block;
+    margin-left:10px;
+    line-height: 140px;
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 13px;
+}
+
+.home_channel_list li a:hover{
+    color: white;
+}
+
+.phone_1 a{
+    position: absolute;
+    float: left;
+    background: url("../images/phone1.jpg");
+    width: 316px;
+    height: 170px;
+    left: 249px;
+}
+
+.phone_2 a{
+    position: absolute;
+    float: left;
+    background: url("../images/phone2.jpg");
+    width: 316px;
+    height: 170px;
+    left: 580px;
+}
+
+.phone_3 a{
+    position: absolute;
+    float: left;
+    background: url("../images/phone3.jpg");
+    width: 316px;
+    height: 170px;
+    right: 0;
+}
+
+.home_foot{
+    width: 1226px;
+    height: 155px;
+    margin: 25px auto 0;
+}
+
+.home_foot a{
+    display: block;
+    width: 1226px;
+    height: 120px;
+    background: url("../images/long_phone.jpg") no-repeat;
+}
+
+.page_main{
+    padding-top: 22px;
+    background: #f5f5f5;
+}
+
+.phone_hed{
+    margin: 20px auto 0;
+    width: 1226px;
+    height: 58px;
+}
+
+.phone_hed h2{
+    float: left;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 58px;
+    color: #333;
+}
+
+.more_link a{
+    margin-top: 20px;
+    float: right;
+    width: 92px;
+    height: 22px;
+    text-decoration: none;
+    color: #333;
+    background: url("../images/small_right.png") no-repeat right;
+}
+
+.more_link a:hover{
+    color: #FF6700;
+}
+
+.phone_body{
+    width: 1226px;
+    height: 615px;
+    margin: 0 auto;
+}
+
+.body_left a{
+    display: block;
+    float: left;
+    width: 234px;
+    height: 614px;
+    line-height: 614px;
+    background: url("../images/mix3.jpg");
+}
+
+.body_left a:hover{
+    display: block;
+    float: left;
+    width: 235px;
+    height: 615px;
+    line-height: 615px;
+    background: url("../images/mix3-2.jpg");
+}
+
+.body_right{
+    float: left;
+    width: 991px;
+    height: 614px;
+}
+
+.body_right div{
+    position: relative;
+    margin: 0 0 13px 13px;
+    float: left;
+    width: 234px;
+    height: 300px;
+    background-color: white;;
+}
+
+.body_right .salespic{
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 25px;
+}
+
+.body_right .salestitile{
+    width: 214px;
+    height: 21px;
+    position: absolute;
+    top: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.body_right .price{
+    width: 214px;
+    height: 21px;
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    bottom: 20px;
+}
+
+.body_right .new_pri{
+    color: red;
+}
+
+.body_right .old_pri{
+    color: #5f5750;
+    text-decoration: line-through;
+}
+
+.body_right .salesoff{
+    position: absolute;
+    width: 64px;
+    height: 20px;
+    color: white;
+    background-color: red;
+    font-size: 12px;
+    text-align: center;
+    top: 0;
+    left: 73px;
+}
+
+.body_right a{
+    display: block;
+    line-height: 160px;
+    width: 160px;
+    height: 160px;
+}
+
+.b1 a{
+    background: url("../images/sales1.jpg") no-repeat;
+}
+
+.b2 a{
+
+    background: url("../images/sales2.png") no-repeat;
+}
+
+.b2 .salesoff{
+    background-color: #83C44E;
+}
+
+.b3 a{
+    background: url("../images/sales3.jpg") no-repeat;
+}
+
+.b4 a{
+    background: url("../images/sales4.jpg") no-repeat;
+}
+
+.b5 a{
+    background: url("../images/sales5.jpg") no-repeat;
+}
+
+.b6 a{
+    background: url("../images/sales6.jpg") no-repeat;
+}
+
+.b7 a{
+    background: url("../images/sales7.jpg") no-repeat;
+}
+
+.b8 a{
+    background: url("../images/sales7.jpg") no-repeat;
+}
+
+/*底部*/
+.footer{
+    padding: 30px 0;
+    font-size: 12px;
+}
+
+.container6{
+    width: 1225px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.container6 a{
+    float: left;
+    text-decoration: none;
+    color: #5f5750;
+}
+
+.container6 a:hover{
+    color: #FF6700;
+}
+
+.fsep{
+    float: left;
+    margin: 0 0.25em;
+    font-size: 12px;
+    color: #5f5750;
+}
+
+.footer-logo a{
+    margin-right: 10px;
+    float: left;
+    width: 57px;
+    height: 57px;
+    padding-bottom: 44px;
+}
+.footer-one , .footer-two , .footer-three, .footer-forth, .footer-five,.footer-photo{
+    float: left;
+}
+
+.footer-two, .footer-three, .footer-forth, .footer-five{
+    padding-right: 200px;
+}
+
+.footer-photo{
+    float: left;
+}
+
+.footer-photo ul li{
+    float: left;
+    width: 83px;
+    height: 28px;
+    margin-left: 0;
+    color: #333;
+}
+
+.bot_font{
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    background: url("../images/slogan.png") no-repeat center 0;
+}

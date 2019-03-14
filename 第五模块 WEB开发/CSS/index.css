@@ -1,0 +1,25 @@
+body{
+    font-size: 12px;
+
+}
+
+/*#d2{*/
+    /*font-size:28px;*/
+    /*color: black;*/
+/*}*/
+
+/*#box{*/
+    /*background: beige;*/
+/*}*/
+
+.big{
+    font-size: 50px;
+}
+
+.col{
+    color: darkgreen;
+}
+
+.under{
+    text-decoration: underline;
+}

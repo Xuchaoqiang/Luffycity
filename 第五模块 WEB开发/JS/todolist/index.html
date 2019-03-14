@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todolist</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!--页面header-->
+    <div class="header">
+        <div class="container">
+            <form action="javascript:postaction()" id="form">
+                <label for="title">ToDoList</label>
+                <input type="text" id="title" name="title" placeholder="添加ToDo" autocomplete="off" required="required">
+            </form>
+        </div>
+    </div>
+
+    <!--页面body-->
+    <div class="body">
+        <h2>
+            正在进行
+            <span id="todocount">0</span>
+        </h2>
+        <ul id="todolist" class="demo-box"></ul>
+        <h2>
+            已经完成
+            <span id="donecount">0</span>
+        </h2>
+        <ul id="donelist" class="done"></ul>
+    </div>
+
+    <!--页面尾部-->
+    <div class="footer">
+         Copyright © 2014 todolist.cn
+        <a href="javascript:clear()">clear</a>
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

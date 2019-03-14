@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高级选择器</title>
+    <style type="text/css">
+        /*后代选择器 在css中使用非常频繁
+        div p{
+            color: red;
+        }
+        div div p{
+            color: green;
+        }
+        .container div p{
+            color:yellow;
+        }*/
+
+        /*子代选择器 '>'*/
+        .container>p{
+            color: aqua;
+        }
+
+        /*交集选择器*/
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p>我是一个段落1</p>
+        <div>
+            <p>我是一个段落</p>
+        </div>
+
+        <ul>
+            <li>
+                <h3>我是一个h3</h3>
+            </li>
+        </ul>
+    </div>
+    <div>
+        22222
+    </div>
+
+</body>
+</html>

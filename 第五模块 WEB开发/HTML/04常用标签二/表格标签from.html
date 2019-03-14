@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签from</title>
+</head>
+<body>
+    <!--from标签是一个块级元素 被提交-->
+    <form action="http://www.baidu.com" method="get">
+        <p>
+            <!--label标签行内元素 input是行内块元素-->
+            <label for="user">用户名：</label>
+            <input type="text" name="username" id="user" placeholder="用输入用户名">
+        </p>
+
+        <p>
+            <label for="pwd">password：</label>
+            <input type="password" name="password" id="pwd" placeholder="用输入密码">
+        </p>
+
+        <p>
+            <!--单选框
+            checked会默认被选中
+            产生互斥效果name值要相同-->
+            用户性别：
+            <input type="radio" name="sex" value="男" checked="">男
+            <input type="radio" name="sex" value="女">女
+        </p>
+
+        <p>
+            <!--复选框-->
+            用户的爱好：
+            <input type="checkbox" name="checkbox" value="吃" checked="">吃
+            <input type="checkbox" name="checkbox" value="喝">喝
+            <input type="checkbox" name="checkbox" value="玩">玩
+            <input type="checkbox" name="checkbox" value="乐">乐
+        </p>
+
+        <p>
+            <!--上传文件-->
+            <input type="file" name="txtfile">
+        </p>
+
+        <p>
+            <!--文本域-->
+            自我介绍：
+            <textarea cols="20" rows="5" name="txt" placeholder="请做自我介绍"></textarea>
+        </p>
+
+        <p>
+            <!--下拉列表-->
+            <select name="sel" size="3" multiple="">
+                <option selected>上海</option>
+                <option>北京</option>
+                <option>深圳</option>
+                <option>广州</option>
+            </select>
+        </p>
+
+        <p>
+            <!--button 显示普通的按钮-->
+            <input type="button" name="btn" value="提交">
+
+            <!--提交from表单使用type=submit-->
+            <input type="submit" name="btn" value="submit">
+
+            <!--重置按钮-->
+            <input type="reset" name="">
+        </p>
+
+    </form>
+
+</body>
+</html>

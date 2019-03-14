@@ -1,0 +1,531 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, a, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+body, button, td, select, textarea, input {
+    font: 12px Tahoma,Verdana,Arial,Helvetica,"\5b8b\4f53",sans-serif;
+    color: #333;
+}
+
+.content-R {
+    width: 300px;
+    padding-top: 4px;
+    float: right;
+}
+
+.chat-area {
+    position: relative;
+}
+
+
+.chat-area .chat {
+    position: relative;
+}
+
+.chat-box {
+    position: relative;
+    width: 298px;
+    height: 480px;
+    border-radius: 4px;
+    border: 1px solid #efefef;
+    background: #f9f9f9;
+}
+
+.chat-mask {
+    position: absolute;
+    z-index: 200;
+    left: 300px;
+    top: 0;
+    width: 300px;
+    height: 480px;
+}
+
+#download_bg {
+    display: block;
+    margin-top: 12px;
+}
+
+.top-band {
+    overflow: hidden;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.top-band .top-band-type {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+em, i {
+    font-style: normal;
+}
+
+.top-band .top-band-type span {
+    color: #c30;
+}
+
+.top-band .top-band-title {
+    margin-bottom: -3px;
+    position: relative;
+}
+
+.top-band .top-band-title a.no-comment-title {
+    background-color: #4767b2;
+    color: #f4f4f4;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.top-band #top-bandArrow {
+    position: absolute;
+    top: 35px;
+    display: block;
+    font-size: 0;
+    height: 0;
+    width: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-color: #4767b2 #fff #fff #fff;
+    border-top-color: #4767b2;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+}
+
+.top-band .top-item {
+    padding-top: 17px;
+    padding-bottom: 14px;
+    clear: both;
+    background: url(../images/cent_secant_4_1.gif) repeat-x 0 bottom;
+    overflow: hidden;
+    _height: 100%;
+}
+
+.top-band .top-item .top-points {
+    float: left;
+}
+
+.top-band .top-item .top-points .points-a {
+    width: 32px;
+    height: 22px;
+    line-height: 22px;
+    display: block;
+    color: #666;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.top-band .top-item .top-content {
+    color: #333;
+    display: block;
+    margin-left: 40px;
+}
+
+/*评论*/
+.comment-box-area {
+    position: relative;
+    margin-top: 8px;
+    display: none;
+    _width: 100%;
+}
+
+.comment-box-area .arrow {
+    width: 11px;
+    height: 7px;
+    position: absolute;
+    top: -6px;
+    left: 55px;
+    display: block;
+    overflow: hidden;
+}
+.pinglun {
+    background: url(../images/pinglun.png) no-repeat 0 0;
+}
+
+.comment-box-area .close-comt {
+    width: 10px;
+    height: 9px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: block;
+    background-position: 0 -29px;
+    overflow: hidden;
+}
+
+.comment-box {
+    border: 1px solid #cbdcee;
+    background-color: #f6f6f6;
+    padding: 12px 15px 0;
+    margin-bottom: 12px;
+    width: 598px;
+    _zoom: 1;
+}
+.corner {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.comment-box .comment-box-top .tip-1 {
+    float: left;
+    font-weight: 700;
+    font-size: 12px;
+    color: #b4b4b4;
+}
+
+.comment-box .comment-box-top .tip-2 {
+    float: left;
+    margin-left: 25px;
+}
+
+.treeview, .treeview ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.comment-list-top-2 .items {
+    clear: both;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    overflow: hidden;
+    position: relative;
+    background: url(../images/cent_secant_4_1.gif) repeat-x 0 bottom;
+    _zoom: 1;
+}
+.filetree li {
+    padding: 0 0 0 16px;
+    *padding-top: 3px;
+}
+
+.treeview li {
+    margin: 0;
+    padding: 3px 0 3px 16px;
+    clear: both;
+}
+.treeview li.last {
+    background-position: 0 -1766px;
+    _margin-top: -4px;
+    _margin-left: 0;
+    padding-top: 10px;
+}
+.huifu-top-box {
+    overflow: hidden;
+    clear: both;
+    _zoom: 1;
+    margin-top: 8px;
+}
+
+.huifu-top-box .box-l {
+    float: left;
+}
+
+.txt-input-area-div-top {
+    position: relative;
+    background-color: #e6ecf3;
+    padding: 5px;
+}
+
+.lab-comment-top {
+    top: 8px;
+    left: 8px;
+    position: static!important;
+    color: #333;
+    line-height: 17px;
+    padding: 2px;
+    cursor: default;
+    display: none;
+}
+#lab-duanzi, #lab-yaoyan, #lab-img, #lab-comment, #lab_phone, #lab_verfify_code, #lab_sms_code, #lab-feedback, .lab-comment-top {
+    position: absolute;
+    left: 12px;
+    top: 9px;
+    color: #ccc;
+    z-index: 2;
+    font-weight: 400;
+}
+
+.txt-huifu-top {
+    font-size: 12px;
+    resize: none;
+    height: 40px;
+    width: 510px;
+    min-height: 20px;
+    padding: 4px 2px 0;
+    line-height: 18px;
+    overflow: auto;
+    outline: 0;
+    *display: block;
+}
+
+.add-pub-btn-unvalid {
+    background-position: 0 -66px;
+}
+.add-pub-btn {
+    width: 62px;
+    height: 31px;
+    line-height: 31px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+    float: right;
+}
+
+.comment-box .tip-3 {
+    float: right;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.comment-box .tip-3 a {
+    color: #99aecb;
+    display: inline-block;
+}
+
+.comment-box .tip-3 .em2 {
+    background-position: 0 -18px;
+    width: 11px;
+    height: 11px;
+    vertical-align: -1px;
+    *vertical-align: 0;
+    display: inline-block;
+    margin-right: 3px;
+    overflow: hidden;
+}
+
+.write-error-box-top {
+    color: #f60;
+    display: block;
+    height: 27px;
+}
+.comment-box .comment-box-top .tip-2 a {
+    color: #99aecb;
+    display: inline-block;
+}
+
+
+
+
+
+
+/*发布*/
+
+
+.dialog {
+    position: absolute;
+    background-color: #e6ecf3;
+    z-index: 300;
+    text-align: left;
+    width: 581px;
+    box-shadow: 0 2px 0 #787878;
+    -webkit-box-shadow: 0 2px 0 #787878;
+    -moz-box-shadow: 0 2px 0 #787878;
+    overflow: hidden;
+    display: none;
+}
+
+.dialog-titlebar {
+    position: relative;
+}
+
+.dialog-title {
+    color: #8aa3c4;
+    font-weight: 700;
+    padding: 0 0 0 10px;
+    height: 28px;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.dialog-content {
+    padding: 15px 20px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.nobrder {
+    border-bottom: 1px solid #fff;
+}
+.W {
+    width: auto;
+}
+.tab-tags {
+    height: 36px;
+    width: 630px;
+    position: relative;
+}
+
+.tab-tags .tb {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    width: 90px;
+    color: #369;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 4px;
+    cursor: pointer;
+    text-align: center;
+    background: url(../images/bottom_mo_128_220.png) no-repeat 0 0;
+    position: relative;
+    z-index: 2;
+}
+
+.tab-tags .w-active {
+    color: #787878;
+    background-position: 0 -74px;
+    border-bottom: 1px solid #fff;
+}
+
+.tags {
+    border-bottom: 1px solid #ccdcef;
+    height: 35px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dialog-main-content {
+    overflow: hidden;
+    _height: 100%;
+}
+
+.publish-content-duanzi, .publish-content-yaoyan {
+    display: none;
+    padding-top: 15px;
+}
+
+.txt-input-area {
+    background-color: #e6ecf3;
+    padding: 5px;
+    position: relative;
+}
+
+#txt-duanzi, #txt-yaoyan, #txt-img, #txt-comment, #txt-zhaiyao, #txt-zhaiyao-share{
+    width: 523px;
+    height: 70px;
+    border: 1px solid #ccdcef;
+    font-size: 13px;
+    color: #333;
+    padding: 2px;
+}
+textarea {
+    outline: 0;
+    resize: vertical;
+    overflow: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+    zoom: 1;
+}
+
+#lab-duanzi, #lab-yaoyan, #lab-img {
+    _left: 7px;
+}
+
+#lab-duanzi, #lab-yaoyan, #lab-img, #lab-comment, #lab_phone, #lab_verfify_code, #lab_sms_code, #lab-feedback, .lab-comment-top {
+    position: absolute;
+    left: 12px;
+    top: 9px;
+    color: #ccc;
+    z-index: 2;
+    font-weight: 400;
+}
+
+
+.dialog-buttonpane {
+    text-align: right;
+    background-color: #e6ecf3;
+    padding-bottom: 5px;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.write-length {
+    float: right;
+    margin-right: 10px;
+    height: 29px;
+    line-height: 24px;
+    color: #8ca1c1;
+}
+
+.write-length span {
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+
+.bottom-null {
+    padding-bottom: 0;
+}
+.white {
+    background-color: #fff;
+}
+.dialog-buttonpane {
+    background-color: white;
+    padding-bottom: 5px;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.write-error-box {
+    background-color: #fff;
+    float: left;
+    color: #f60;
+    line-height: 35px;
+    margin-top: 15px;
+}
+
+.write-error, .write-error-desc {
+    display: none;
+    height: 29px;
+    color: #f60;
+}
+
+.pub-clear-btn {
+    color: #369;
+    margin-right: 18px;
+    display: inline-block;
+}
+
+.new-pub-btn {
+    width: 96px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+
+

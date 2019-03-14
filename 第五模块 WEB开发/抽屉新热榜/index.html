@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽屉新热榜</title>
+    <link rel="stylesheet" href="css/index_hander.css">
+    <link rel="stylesheet" href="css/index_content.css">
+    <link rel="stylesheet" href="css/index_footer.css">
+</head>
+<body>
+<!--页面头部-->
+<div class="head-band">
+    <div class="head-content clearfix">
+        <a href="#" class="digg-logo"></a>
+        <!--导航-->
+        <div class="action-menu">
+            <a href="#" class="tb active">全部</a>
+            <a href="#" class="tb">42区</a>
+            <a href="#" class="tb">段子</a>
+            <a href="#" class="tb">图片</a>
+            <a href="#" class="tb">挨踢</a>
+            <a href="#" class="tb">你问我答</a>
+        </div>
+        <div class="search">
+            <button class="s_btn ico"></button>
+            <label for="s_text"></label>
+            <input type="text" id="s_text" name="s_text" class="s_text">
+        </div>
+        <div class="action-nav">
+            <a href="javascript:;" class="login-btn-a">注册</a>
+            <a href="javascript:;" class="login-btn-a">登陆</a>
+        </div>
+    </div>
+</div>
+<div class="module-login-mask" style="display: none">
+    <div class="module-login-container">
+        <div class="box-register" style="padding-left: 350px;">
+            <div class="box-login">
+                <div class="header" style="border-radius:5px 0 0 0;">登录</div>
+                <div class="body-login" style="border-radius:0 0 0 5px;">
+                    <div class="tab-box">
+                        <span class="tab-mobilelogin" style="margin-right:10px;">手机号登录</span>|<span
+                            class="tab-idlogin active" style="margin-left:10px;">用户名登录</span>
+                    </div>
+
+                    <div class="box-mobilelogin" style="display: none;">
+                        <div class="err-msg"></div>
+                        <div>
+                            <select class="region">
+                                <option value="86">中国(+86)</option>
+                                <option value="852">中国香港(+852)</option>
+                                <option value="853">中国澳门(+853)</option>
+                                <option value="886">中国台湾(+886)</option>
+                                <option value="1">美国(+1)</option>
+                                <option value="1">加拿大(+1)</option>
+                                <option value="60">马来西亚(+60)</option>
+                                <option value="61">澳洲(+61)</option>
+                                <option value="81">日本(+81)</option>
+                                <option value="82">韩国(+82)</option>
+                                <option value="65">新加坡(+65)</option>
+                                <option value="44">英国(+44)</option>
+                                <option value="33">法国(+33)</option>
+                                <option value="7">俄罗斯(+7)</option>
+                                <option value="91">印度(+91)</option>
+                                <option value="66">泰国(+66)</option>
+                                <option value="49">德国(+49)</option>
+                            </select>
+                        </div>
+                        <form class="form-mobilelogin" action="#" autocomplete="on">
+                            <div class="pr"><input type="text" name="mobile" id="mobile" placeholder="手机号"
+                                                   class="mobile" tabindex="1"></div>
+                            <div class="pr"><input type="password" name="mbpwd" id="mbpwd" placeholder="密码"
+                                                   class="mbpwd" tabindex="2"></div>
+                        </form>
+                    </div>
+
+                    <div class="box-idlogin" style="">
+                        <div class="err-msg"></div>
+                        <form class="form-idlogin" action="#" autocomplete="on">
+                            <div class="pr"><input type="text" name="userid" id="userid" placeholder="用户名"
+                                                   class="userid" tabindex="1"></div>
+                            <div class="pr"><input type="password" name="pwd" id="pwd" placeholder="密码" class="pwd"
+                                                   tabindex="2"></div>
+
+
+                        </form>
+                    </div>
+
+                    <div class="box-btn">
+                        <div style="position:relative;margin-bottom:20px;"><span><input type="checkbox"
+                                                                                        class="keeplogin" value="1"
+                                                                                        checked="">一个月内自动登录</span> <span
+                                class="fgtpwd"><a href="/profile/password/reset">忘记密码?</a></span></div>
+
+                        <div>
+
+
+                            <div class="btn btn-login pub-icons pub-btn pub-btn-valid"><span>登录</span><span
+                                    style="display:none;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header box-active" style="border-radius:0 5px 0 0;"><span>注册</span>
+                <div style="position:absolute;right:8px;top:8px;width:15px;height:15px;">
+                    <div class="btn-close icons dialog-btn-close" id="close_cli"></div>
+                </div>
+            </div>
+            <div class="body-register" style="border-radius:0 0 5px 0;">
+                <div class="step-box"><span class="step step-1 step-active">1 填写手机号</span><span> &gt; </span><span
+                        class="step         step-2">2 填写基本资料</span></div>
+
+                <div class="box-register-mobile">
+                    <div class="err-msg"></div>
+                    <div>
+                        <select class="rgmobileregion">
+                            <option value="86">中国(+86)</option>
+                            <option value="852">中国香港(+852)</option>
+                            <option value="853">中国澳门(+853)</option>
+                            <option value="886">中国台湾(+886)</option>
+                            <option value="1">美国(+1)</option>
+                            <option value="1">加拿大(+1)</option>
+                            <option value="60">马来西亚(+60)</option>
+                            <option value="61">澳洲(+61)</option>
+                            <option value="81">日本(+81)</option>
+                            <option value="82">韩国(+82)</option>
+                            <option value="65">新加坡(+65)</option>
+                            <option value="44">英国(+44)</option>
+                            <option value="33">法国(+33)</option>
+                            <option value="7">俄罗斯(+7)</option>
+                            <option value="91">印度(+91)</option>
+                            <option value="66">泰国(+66)</option>
+                            <option value="49">德国(+49)</option>
+                        </select>
+                    </div>
+                    <div class="pr">
+                        <div class="net-very"></div>
+                    </div>
+                    <div>
+                        <input type="hidden" name="captchaId" value="474417edadf3452fa78306837a94b428">
+                        <div id="captcha"><input type="hidden" name="NECaptchaValidate" value="" class="yidun_input">
+                        </div>
+                    </div>
+                    <div class="pr"><input type="text" placeholder="手机号" style="width:120px;margin-right:6px;"
+                                           class="rgmobile">
+                        <div class="btn btn-getcode">获取验证码</div>
+                        <div style="text-align:right;margin-top:5px;" class="box-voicecode"><span>收不到短信？<a
+                                class="btn-getvoicecode" href="#">获取语音验证码</a></span></div>
+                    </div>
+                    <div class="pr"><input type="text" placeholder="验证码" class="rgcode"></div>
+                    <div class="pr"><input type="password" placeholder="密码" class="rgpwd"></div>
+
+                    <div class="btn btn-register pub-icons pub-btn pub-btn-valid"><span>下一步</span><span
+                            style="display:none;"></span></div>
+                </div>
+
+                <div class="box-register-detail" style="display:none;">
+                    <div class="err-msg"></div>
+                    <div class="pr"><input type="text" placeholder="昵称（10个汉字以内）" maxlength="10" class="nick"></div>
+                    <div class="pr"><input type="radio" name="rgsex" class="sex" value="false" checked="">女 <input
+                            type="radio" name="rgsex" class="sex" value="true">男
+                    </div>
+
+                    <div>
+                        <select class="rgregion">
+                            <option value="0">中国</option>
+                            <option value="1">海外</option>
+                        </select>
+                    </div>
+
+                    <div class="box-rgcity">
+                        <select class="rgpro" style="width:49%;">
+                            <option value="">请选择</option>
+                            <option value="北京">北京</option>
+                            <option value="天津">天津</option>
+                            <option value="河北">河北</option>
+                            <option value="山西">山西</option>
+                            <option value="内蒙古">内蒙古</option>
+                            <option value="辽宁">辽宁</option>
+                            <option value="吉林">吉林</option>
+                            <option value="黑龙江">黑龙江</option>
+                            <option value="上海">上海</option>
+                            <option value="江苏">江苏</option>
+                            <option value="浙江">浙江</option>
+                            <option value="安徽">安徽</option>
+                            <option value="福建">福建</option>
+                            <option value="江西">江西</option>
+                            <option value="山东">山东</option>
+                            <option value="河南">河南</option>
+                            <option value="湖北">湖北</option>
+                            <option value="湖南">湖南</option>
+                            <option value="广东">广东</option>
+                            <option value="广西">广西</option>
+                            <option value="海南">海南</option>
+                            <option value="重庆">重庆</option>
+                            <option value="四川">四川</option>
+                            <option value="贵州">贵州</option>
+                            <option value="云南">云南</option>
+                            <option value="西藏">西藏</option>
+                            <option value="陕西">陕西</option>
+                            <option value="甘肃">甘肃</option>
+                            <option value="青海">青海</option>
+                            <option value="宁夏">宁夏</option>
+                            <option value="新疆">新疆</option>
+                            <option value="香港">香港</option>
+                            <option value="澳门">澳门</option>
+                            <option value="台湾">台湾</option>
+                        </select>
+                        <select class="rgcity" style="width:49%;">
+                            <option value="">请选择</option>
+                        </select>
+                    </div>
+
+                    <div class="pr"><textarea placeholder="签名档（100个汉字以内）" maxlength="100" class="sign"></textarea></div>
+
+                    <div class="btn btn-accomplish pub-icons pub-btn pub-btn-valid"><span>提交资料</span><span
+                            style="display:none;"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--页面中心内容-->
+<div class="main-content-band clearfix">
+    <div class="main-content clearfix">
+        <div class="content-L">
+            <!--最新最热按钮-->
+            <div class="nav-top-area">
+                <div class="child-nav">
+                    <a href="#" class="hotbtn active icons">最热</a>
+                    <a href="#" class="newbtn">发现</a>
+                    <a href="#" class="personbtn">人类发布</a>
+                </div>
+                <div class="sort-nav">
+                    <a href="#" class="active hotbtn">即时排序</a>
+                    <a href="#" class="newbtn">24小时</a>
+                    <a href="#" class="newbtn">3天</a>
+                </div>
+                <a href="javascript:;" class="publish-btn" id="pub_id">
+                    <span class="ico n1"></span>
+                    <span class="n2">发布</span>
+                </a>
+            </div>
+            <!--内容显示区域-->
+            <div class="content-list clearfix">
+                <div class="item" id="i1">
+                    <div class="news-pic">
+                        <img src="./images/conten1.png" alt="抽屉新热榜">
+                    </div>
+                    <div class="new-content">
+                        <div class="part1">
+                            <a href="#" class="show-content color-chag">
+                                【男孩成绩没过95分被扔高速，妈妈：就算坐牢也不要他】2日晚，洛阳警方接群众报警称，一男孩被扔在高速入口。民警到场后了解到，男孩因考试未达95分以上，妈妈一气之下将其扔下。民警联系男孩妈妈并进行劝解，但其坚称：就算坐牢也不要他了。民警只好把男孩先行带回派出所。
+                            </a>
+                            <span class="content-source">-news.163.com</span>
+                            <a href="#" class="n2">
+                                <span class="conten-kind">42区</span>
+                            </a>
+                        </div>
+                        <!--显示摘要-->
+                        <div class="part2">
+                            <a href="javascript:;" title="推荐" class="digg-a">
+                                <span class="hand-icon icon-digg"></span>
+                                <b class="likes">5</b>
+                            </a>
+                            <a href="javascript:;" class="discus-a a_active">
+                                <span class="hand-icon icon-discus" id="due1"></span>
+                                <b id="count1">2</b>
+                            </a>
+                            <a href="javascript:;" class="collect-a" title="加入私藏">
+                                <span class="hand-icon icon-collect"></span>
+                                <b>私藏</b>
+                            </a>
+                            <a href="javascript:;" class="user-a">
+                                    <span>
+                                        <img src="./images/user-1.jpg">
+                                    </span>
+                                <b>ifanr</b>
+                            </a>
+                            <span class="left time-into">
+                                        <a href="#" class="time-a">
+                                            <b>41分钟前</b>
+                                        </a>
+                                        <i>入热榜</i>
+                                    </span>
+                            </a>
+                        </div>
+                        <div class="comment-box-area" id="comment-box-area-25076146" style="display: none">
+                            <div class="pinglun arrow" id="comt-arrow-25076146" style="left: 62.75px;"></div>
+                            <a class="pinglun close-comt" title="关闭" href="javascript:;" lang="25076146"></a>
+                            <div class="corner comment-box" id="comment-box-25076146">
+                                <!-- 评论树形 -->
+                                <ul class="filetree comment-list-top-2 treeview" id="comment-list-top-25076146"
+                                    style="background: none;">
+                                    <li class="items">
+                                        <span class="folder" style="background: none;">
+                                            <div class="comment-L comment-L-top">
+                                                <a href="#" class="icons zhan-ico"></a>
+
+                                            <div class="pp">
+                                                <a class="name" href="#">闪现放大</a>
+                                                <span class="p3">
+                                                    <span class="text-comment-con">除了这18亿，你嗨有啥？你还是个啥！</span></span>
+
+                                            </div>
+                                        </div>
+                                        </span>
+                                    </li>
+                                    <li class="items last">
+                                        <span class="folder" style="background: none;">
+                                            <div class="comment-L comment-L-top">
+                                                <a href="#" class="icons zhan-ico"></a>
+
+                                            <div class="pp">
+                                                <a class="name" href="#">李某人</a>
+                                                <span class="p3">
+                                                    <span class="text-comment-con">到此一游！</span></span>
+
+                                            </div>
+                                        </div>
+                                        </span>
+                                    </li>
+
+                                </ul>
+
+
+
+                                <!-- 评论输入框和回复框 -->
+                                <div class="huifu-top-box" id="huifu-top-box-25076146" style="display: block;">
+                                    <div class="box-l txt-input-area-div-top corner no-corner-bottom">
+                                        <div id="lab-comment-top-25076146" class="lab-comment-top"
+                                             style="display: none;">回复 <span id="nick--25076146"></span>:
+                                        </div>
+
+
+                                        <textarea lang="25076146" maxlength="150" name="txt-huifu-top"
+                                                  id="txt-huifu-top-25076146" class="txt-huifu txt-huifu-top"
+                                                  style="text-indent: 0px; height: 20px; resize: none;"></textarea>
+
+
+                                    </div>
+                                    <div class="box-r">
+                                        <a id="pub-btn-top-25076146" lang="25076146" href="javascript:;"
+                                           class="pub-icons add-pub-btn add-pub-btn-unvalid">评论</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="tip-3" id="hidden-comt-25076146" style="display: block;">
+                                    <a href="javascript:;" class="hiddenCom-Btn" lang="25076146"><em
+                                            class="pinglun em2"></em><span>收起</span></a>
+                                </div>
+                                <div class="write-error-box-top">
+                                    <div class="write-error-desc" id="write-error-desc-25076146"
+                                         style="display: none;"></div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="hidsubjectid-25076146" value="1">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item" id="i2">
+                    <div class="news-pic">
+                        <img src="./images/conten2.jpeg" alt="抽屉新热榜">
+                    </div>
+                    <div class="new-content">
+                        <div class="part1">
+                            <a href="#" class="show-content color-chag">
+                                【2018年我拍摄的西藏冰川】西藏的冰斗湖现在还不算多，很多冰川前端的湖都是冰碛湖。如果某一天冰斗湖增加了很多，那说明冰川消融真的很严重了....
+                            </a>
+                            <span class="content-source">-www.mafengwo.cn</span>
+                            <a href="#" class="n2">
+                                <span class="conten-kind">42区</span>
+                            </a>
+                        </div>
+                        <!--显示摘要-->
+                        <div class="part2">
+                            <a href="javascript:;" title="推荐" class="digg-a">
+                                <span class="hand-icon icon-digg" id="rec"></span>
+                                <b >28</b>
+                            </a>
+                            <a href="javascript:;" class="discus-a" id="due2">
+                                <span class="hand-icon icon-discus"></span>
+                                <b id="count2">2</b>
+                            </a>
+                            <a href="javascript:;" class="collect-a" title="加入私藏">
+                                <span class="hand-icon icon-collect"></span>
+                                <b>私藏</b>
+                            </a>
+                            <a href="javascript:;" class="user-a">
+                                    <span>
+                                        <img src="./images/user-2.png">
+                                    </span>
+                                <b>渣</b>
+                            </a>
+                            <span class="left time-into">
+                                        <a href="#" class="time-a">
+                                            <b>2分钟前</b>
+                                        </a>
+                                        <i>入热榜</i>
+                                    </span>
+                            </a>
+                        </div>
+                        <div class="comment-box-area" id="comment-box-area-25076147" style="display: none">
+                            <div class="pinglun arrow" id="comt-arrow-25076147" style="left: 62.75px;"></div>
+                            <a class="pinglun close-comt" title="关闭" href="javascript:;" lang="25076146"></a>
+                            <div class="corner comment-box" id="comment-box-25076147">
+                                <!-- 评论树形 -->
+                                <ul class="filetree comment-list-top-2 treeview" id="comment-list-top-25076147"
+                                    style="background: none;">
+                                    <li class="items">
+                                        <span class="folder" style="background: none;">
+                                            <div class="comment-L comment-L-top">
+
+                                            <div class="pp">
+                                                <a class="name" href="#">iojiwd</a>
+                                                <span class="p3">
+                                                    <span class="text-comment-con">666</span></span>
+
+                                            </div>
+                                        </div>
+                                        </span>
+                                    </li>
+                                    <li class="items last">
+                                        <span class="folder" style="background: none;">
+                                            <div class="comment-L comment-L-top">
+                                                <a href="#" class="icons zhan-ico"></a>
+
+                                            <div class="pp">
+                                                <a class="name" href="#">ashui</a>
+                                                <span class="p3">
+                                                    <span class="text-comment-con">print hello world</span></span>
+
+                                            </div>
+                                        </div>
+                                        </span>
+                                    </li>
+
+                                </ul>
+
+                                <!-- 谣言类别显示相信还是置疑选项 -->
+
+
+                                <!-- 判断该新闻评论是否关闭 -->
+
+
+                                <!-- 评论输入框和回复框 -->
+                                <div class="huifu-top-box" id="huifu-top-box-25076147" style="display: block;">
+                                    <div class="box-l txt-input-area-div-top corner no-corner-bottom">
+                                        <div id="lab-comment-top-25076147" class="lab-comment-top"
+                                             style="display: none;">回复 <span id="nick--25076147"></span>:
+                                        </div>
+                                        <!-- 针对谣言文本输入框无效 -->
+
+
+                                        <textarea lang="25076146" maxlength="150" name="txt-huifu-top"
+                                                  id="txt-huifu-top-25076147" class="txt-huifu txt-huifu-top"
+                                                  style="text-indent: 0px; height: 20px; resize: none;"></textarea>
+
+
+                                    </div>
+                                    <div class="box-r">
+                                        <a id="pub-btn-top-25076147" lang="25076146" href="javascript:;"
+                                           class="pub-icons add-pub-btn add-pub-btn-unvalid">评论</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="tip-3" id="hidden-comt-25076147" style="display: block;">
+                                    <a href="javascript:;" class="hiddenCom-Btn" lang="25076146"><em
+                                            class="pinglun em2"></em><span>收起</span></a>
+                                </div>
+                                <div class="write-error-box-top">
+                                    <div class="write-error-desc" id="write-error-desc-25076147"
+                                         style="display: none;"></div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="hidsubjectid-25076147" value="1">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-R">
+            <div class="chat-area" id="chat-area" style="display:none">
+                <input class="islogin" value="" type="hidden">
+                <input class="slogan" value="本聊天由阿姆斯特朗回旋加速喷气式阿姆斯特朗炮提供技术支持。" type="hidden">
+            </div>
+            <div>
+                <a style="width:142px; height: 66px;" href="http://www.12377.cn/" target="_blank">
+                    <img src="./images/report.png">
+                </a>
+                <a style="width:142px; height: 66px;margin-left: 10px;" href="#" target="_blank">
+                    <img src="./images/report_children.png">
+                </a>
+            </div>
+            <div style="margin-top:10px;">
+                <a target="_blank" href="#" class="btn-notice"
+                   style="font-size:14px;font-weight:bold;color:#369;cursor:pointer;padding-left:30px;background:url(./images/view.png) no-repeat left center;height:20px;display:inline-block;">如何避免自己被封号</a>
+            </div>
+            <a target="_blank" href="#" id="download_bg">
+                <img src="./images/homepage_download.png">
+            </a>
+            <div class="top-band" id="top-band">
+                <em class="top-band-type" style="display: block;">24小时<em>全部</em><span> TOP 10</span></em>
+                <div class="top-band-title" style="display: block;">
+                    <a class="no-comment-title">最热榜</a>
+                    <em id="top-bandArrow" style="left: 145px;"></em>
+                </div>
+                <div id="top-content-news">
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">227</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">勿忘初心，保持单身。</a>
+                    </div>
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">202</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">被冷落的WIN键，其实比你想的更好用</a>
+                    </div>
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">179</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">就是这样.jpg</a>
+                    </div>
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">152</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">华为在深圳总部发布声明：决定起诉美国政府。华为表示，有证据表明美国政府涉嫌入侵华为服务器。</a>
+                    </div>
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">149</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">还好我就没有这种烦恼～</a>
+                    </div>
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">148</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">【日媒探访日本深夜幼儿园，凌晨2点接宝宝回家】日本福冈中州是日本有名的风俗街，而在这里却有一家运营超过40年的幼儿园。它每天从早晨7点开至深夜2点，使那些因为工作而无法及时照顾孩子的家长有了可以依托的地方。他们虽然累，却依然为孩子的未来咬牙坚持着。</a>
+                    </div>
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">142</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">【管虎导演新作《八佰》发布先导预告，宣布将于年内上映】影片取材自1937年淞沪会战期间的真实战役，是战争史上前所未有的“有观众的战争”——八百勇士誓死保卫四行仓库，而相隔一条苏州河，就是歌舞升平的上海公共租界。</a>
+                    </div>
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">134</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">【人大代表马化腾：希望有关部门对网约车等新事物切勿一刀切】“希望政策对新生事物不要过早贴标签，只从自己管理角度出发，不出事就行。过去滴滴出事导致十部委入驻，现在还没有完全解决。对于新生事物遇到的一些问题，要想怎么解决问题，但是切忌一刀切。”</a>
+                    </div>
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">114</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">一个神奇的AR艺术展「Mirages &amp;
+                            miracles」来着艺术家：Adrien M &amp; Claire B</a>
+                    </div>
+
+                    <div class="top-item">
+                        <div class="top-points">
+                            <a href="#" class="points-a">106</a>
+                        </div>
+                        <a class="top-content" href="#" target="_blank">它可能觉得自己闯祸了…</a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="pswp__bg"></div>
+
+                <div class="pswp__scroll-wrap">
+
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+
+                    <div class="pswp__ui pswp__ui--hidden">
+
+                        <div class="pswp__top-bar">
+                            <div class="pswp__counter"></div>
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                    <div class="pswp__preloader__cut">
+                                        <div class="pswp__preloader__donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div>
+                        </div>
+
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                        </button>
+
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                        </button>
+
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--页面底部-->
+<div class="footer-band">
+    <div class="module-pub-mask" style="display: none">
+            <div class="dialog corner " id="digg-dialog-publish" style="left: 493px; display: none; top: 130px;">
+        <div class="dialog-titlebar">
+            <div class="dialog-title">
+                <span id="shareTitle">分享新发现</span>
+                <input type="hidden" id="hidHtTag" value="" topicid="">
+                <div class="dialog-titlebar-close"><a href="javascript:;" title="关闭" class="icons dialog-btn-close"
+                                                      id="dialog-btn-close"></a></div>
+
+            </div>
+        </div>
+        <div class="dialog-content corner-bottom">
+            <div class="tab-tags nobrder W" id="tabs">
+
+                <a href="javascript:;" class="tb H" id="pubTabZixun">链接</a>
+                <a href="javascript:;" class="tb H w-active color" id="pubTabDuanzi">文字</a>
+                <a href="javascript:;" class="tb H" id="pubTabPic">图片</a>
+                <div class="tags"></div>
+            </div>
+            <div class="dialog-main-content" id="dialog-main-content">
+                <!-- 资讯区域 -->
+
+                <div class="publish-content-zixun" id="publish-content-zixun" style="display: none;">
+                    <div class="tab-alt">添加链接</div>
+                    <div class="p1">
+                        <div class="txt-input-area float-left corner" style="width:426px;" id="txt-zixun-area">
+                            <input type="text" name="txt-zixun" id="txt-zixun" class="small-txt-input"
+                                   style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); width: 420px; border: 1px solid rgb(204, 220, 239);">
+                            <label id="lab-zixun" for="txt-zixun" style="display: block;">http://</label>
+                            <input id="url" name="url" type="hidden" value="">
+                        </div>
+                        <div class="button-container" id="zixun-button-container">
+                            <a class="pub-icons pub-btn pub-btn-unvalid" href="javascript:;" id="add-pub-btn0">获取标题</a>
+                            <a class="loading martop10" href="javascript:;" id="add-pub-loading0"
+                               style="display: none;"></a>
+                        </div>
+
+                    </div>
+
+                    <div id="zixun-big-area">
+                        <div class="tab-alt martop8">标题</div>
+                        <div class="small-txt-input-area corner" id="zixun-http-area">
+                            <input name="txt-zixun-content" id="txt-zixun-content" maxlength="150"
+                                   class="small-txt-input w496" disabled="disabled"
+                                   style="background-color: rgb(236, 233, 216);">
+                        </div>
+                        <div class="tab-alt martop8">添加摘要（选填）</div>
+                        <div class="txt-input-area corner" style="padding:6px;">
+                            <textarea id="txt-zhaiyao" name="txt-zhaiyao" maxlength="120" disabled="disabled"
+                                      style="background-color: rgb(236, 233, 216);"></textarea>
+                        </div>
+                        <div class="toclass-btn-area">
+                            <span class="tospan">发布到:</span>
+                            <div class="to-btn-area"><a class="pub-icons toclass-btn toclass-btn-valid"
+                                                        href="javascript:;" lang="1">42区</a><a
+                                    class="pub-icons toclass-btn toclass-btn-unvalid" href="javascript:;"
+                                    lang="2">段子</a><a class="pub-icons toclass-btn toclass-btn-unvalid"
+                                                      href="javascript:;" lang="4">图片</a><a
+                                    class="pub-icons toclass-btn un1024 toclass-btn-unfavor-unvalid" href="javascript:;"
+                                    lang="100">挨踢1024</a><a class="pub-icons toclass-btn toclass-btn-unvalid"
+                                                            href="javascript:;" lang="151">你问我答</a></div>
+                        </div>
+
+                        <div class="toclass-btn-area codeImgArea0 hide">
+                            <span class="tospan">验证码:</span>
+                            <input name="code" class="small-txt-input code" style="width: 145px">
+                            <input type="hidden" class="randomKey" name="randomKey">
+                            <img class="codeImg" src="" onclick="showCodeImg('codeImgArea0')"
+                                 style="vertical-align:top;height:32px;cursor:pointer">
+                        </div>
+
+                        <div class="dialog-buttonpane white bottom-null" id="dialog-buttonpane0">
+                            <div class="write-error-box" id="write-error-box0">
+                                <div class="write-error-desc"></div>
+                            </div>
+                            <div class="button-container">
+                                <a class="pub-clear-btn" href="javascript:;" id="clear-btn-link">清空</a>
+                                <a class="pub-icons new-pub-btn new-pub-btn-unvalid" href="javascript:;" id="pub-btn0">发&nbsp;布</a>
+                                <a class="loading" href="javascript:;" id="pub-loading0">发布中...</a>
+                            </div>
+                            <div class="write-error" style="display: none;">标题已超出<span id="moreLength0">10</span>个字
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="height:30px;clear:both;overflow:hidden">
+
+                    </div>
+                </div>
+                <!-- 段子区域 -->
+                <div class="publish-content-duanzi" id="publish-content-duanzi" style="display: block;">
+                    <div class="txt-input-area corner no-corner-bottom">
+                        <textarea name="txt-duanzi" id="txt-duanzi"
+                                  style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 220, 239);"></textarea>
+                        <label id="lab-duanzi" for="txt-duanzi" style="display: block;"></label>
+                    </div>
+
+                    <div class="toclass-btn-area">
+                        <span class="tospan">发布到:</span>
+                        <div class="to-btn-area"><a class="pub-icons toclass-btn toclass-btn-valid" href="javascript:;"
+                                                    lang="1">42区</a><a class="pub-icons toclass-btn toclass-btn-unvalid"
+                                                                       href="javascript:;" lang="2">段子</a><a
+                                class="pub-icons toclass-btn un1024 toclass-btn-unfavor-unvalid" href="javascript:;"
+                                lang="100">挨踢1024</a><a class="pub-icons toclass-btn toclass-btn-unvalid"
+                                                        href="javascript:;" lang="151">你问我答</a></div>
+                    </div>
+
+                    <div class="dialog-buttonpane white bottom-null" id="dialog-buttonpane1">
+                        <div class="write-error-box" id="write-error-box1">
+                            <div class="write-error-desc"></div>
+                        </div>
+                        <div class="button-container">
+                            <a class="pub-clear-btn" href="javascript:;" id="clear-btn-wanzi">清空</a>
+                            <a class="pub-icons new-pub-btn new-pub-btn-unvalid" href="javascript:;" id="pub-btn1">发&nbsp;布</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="foot-nav">
+        <div style="display:none" id="y-destjid"></div>
+        <div style="display:none" id="y-destnick"></div>
+        <a href="#" target="_blank">关于我们</a>
+        <span>|</span>
+        <a href="#" target="_blank">联系我们</a>
+        <span>|</span>
+        <a href="#" target="_blank">服务条款</a>
+        <span>|</span>
+        <a href="#" target="_blank">隐私政策</a>
+        <span>|</span>
+        <a href="#" target="_blank">抽屉新热榜工具</a>
+        <span>|</span>
+        <a href="#" target="_blank">下载客户端</a>
+        <span>|</span>
+        <a href="#" target="_blank">意见与反馈</a>
+        <span>|</span>
+        <a href="#" target="_blank">友情链接</a>
+        <span>|</span>
+        <a href="#" target="_blank">公告</a>
+        <a href="#" target="_blank" style="margin-left:0;vertical-align:-2px;"
+           title="Rss订阅，Feed地址：http://dig.chouti.com/feed.xml">
+            <img src="./images/ct_rss.gif" width="36" height="14">
+        </a>
+    </div>
+    <div class="foot-nav2">
+        <a target="_blank" href="#"><img class="foot_e" src="./images/gozap-logo-50_15.gif"></a>
+        <span class="foot_d">旗下站点</span>
+        <span class="foot_a">©2019
+                chouti.com</span>
+        <a target="_blank" href="#" class="foot_b">京ICP备09053974号-3 京公网安备 11010202004562</a>
+        <div style="margin-top:6px;">
+            <span class="foot_d">违法和不良信息举报：</span>
+            <span class="foot_a">电话：010-58302039  </span>
+            <span class="foot_a" style="margin-left: 15px;">邮箱：<a style="color: #369;margin-right: 10px;" href="#">jubao@chouti.com</a> </span>
+        </div>
+        <div style="margin-top:6px;">版权所有：北京格致璞科技有限公司</div>
+    </div>
+</div>
+<a href="#" title="回到顶部" class="icon-main" id="gotop" style="left: 1479px; display: block;"></a>
+
+<script src="./js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+.module-login-mask, .module-pub-mask  {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+
+.module-login-container {
+    height: 375px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -218px;
+}
+
+.box-register {
+    position: relative;
+    width: 350px;
+    z-index: 100;
+    padding-left: 350px;
+    margin: auto;
+    height: 375px;
+    border-radius: 0 5px 5px 0;
+}
+
+.box-login {
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 5px 0 0 5px;
+}
+
+.module-login-container .header {
+    background: #e7ecf2;
+    padding: 0 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #abb6d2;
+    position: relative;
+}
+
+.body-register, .body-login {
+    background: white;
+    height: 345px;
+    width: 350px;
+}
+
+.tab-box {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #abb6d2;
+    cursor: pointer;
+}
+
+
+.tab-box {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #abb6d2;
+    cursor: pointer;
+}
+
+
+.box-mobilelogin, .box-idlogin, .box-btn, .box-register-mobile, .box-register-detail {
+    position: relative;
+    padding: 0 70px;
+}
+
+
+.box-register .err-msg {
+    position: absolute;
+    top: -16px;
+    left: 70px;
+    color: #F60;
+}
+.box-mobilelogin div, .box-idlogin div, .box-register-mobile div, .box-register-detail div {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.box-mobilelogin select, .box-register-mobile select, .box-register-detail select {
+    width: 100%;
+    padding: 5px 2px;
+    border: 1px solid #CDDDEF;
+}
+
+
+
+.box-register .err-msg {
+    position: absolute;
+    top: -16px;
+    left: 70px;
+    color: #F60;
+}
+
+.module-login-mask .pr {
+    position: relative;
+}
+
+.box-mobilelogin input, .box-idlogin input, .box-register-mobile input, .box-register-detail input {
+    width: 196px;
+    padding: 6px;
+    border: 1px solid #CDDDEF;
+    font-weight: bold;
+}
+
+.module-login-mask .pr {
+    position: relative;
+}
+.box-mobilelogin div, .box-idlogin div, .box-register-mobile div, .box-register-detail div {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.box-btn .keeplogin {
+    width: auto;
+    margin: 0;
+    vertical-align: -2px;
+}
+
+.box-btn .fgtpwd {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.module-login-mask a {
+    color: #369;
+}
+
+.box-register .btn {
+    text-align: center;
+    cursor: pointer;
+}
+.pub-btn-valid {
+    background-position: 0 -99px;
+}
+.pub-btn {
+    width: 95px;
+    height: 31px;
+    line-height: 31px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+.pub-icons {
+    background: url("../images/bottom.png") no-repeat 0 0;
+}
+
+.module-login-container .header {
+    background: #e7ecf2;
+    padding: 0 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #abb6d2;
+    position: relative;
+}
+
+
+.box-register .btn-close {
+    cursor: pointer;
+}
+.dialog-btn-close {
+    background-position: 0 -499px;
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+.icons {
+    background: url("../images/x.png") no-repeat 0 0;
+}
+
+.body-register, .body-login {
+    background: white;
+    height: 345px;
+    width: 350px;
+}
+
+.step-box {
+    text-align: center;
+    padding: 20px 0;
+    color: #abb6d2;
+    font-size: 14px;
+    line-height: 1px;
+}
+
+.step-box .step-active {
+    color: #2559a4;
+}
+
+.box-register .err-msg {
+    position: absolute;
+    top: -16px;
+    left: 70px;
+    color: #F60;
+}
+
+.module-login-mask .pr {
+    position: relative;
+}
+
+.pub-btn-valid {
+    background-position: 0 -99px;
+}
+
+
+.box-mobilelogin select, .box-register-mobile select, .box-register-detail select {
+    width: 100%;
+    padding: 5px 2px;
+    border: 1px solid #CDDDEF;
+}
+
+
+.module-login-mask .pr {
+    position: relative;
+}
+
+.box-mobilelogin input, .box-idlogin input, .box-register-mobile input, .box-register-detail input {
+    width: 196px;
+    padding: 6px;
+    border: 1px solid #CDDDEF;
+    font-weight: bold;
+}
+
+.box-mobilelogin div, .box-idlogin div, .box-register-mobile div, .box-register-detail div {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.box-register-mobile .btn-getcode {
+    width: 60px;
+    display: inline-block;
+    padding: 6px 5px;
+    font-size: 12px;
+    margin: 0;
+    background: #015e98;
+    color: white;
+    border-radius: 5px;
+}
+.box-register .btn {
+    text-align: center;
+    cursor: pointer;
+}
+.module-login-mask a {
+    color: #369;
+}
+
+.module-login-mask .pr {
+    position: relative;
+}
+
+.dialog-titlebar-close{
+    float: right;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+#txt-duanzi, #txt-yaoyan, #txt-img, #txt-comment, #txt-zhaiyao, #txt-zhaiyao-share, .txt-huifu {
+    width: 523px;
+    height: 70px;
+    border: 1px solid #ccdcef;
+    font-size: 13px;
+    color: #333;
+    padding: 2px;
+}
+
+
+.new-pub-btn-unvalid {
+    background-position: 0 -563px;
+}
+
+.toclass-btn-valid {
+    background-position: 0 -409px;
+}
+
+
+.toclass-btn-unfavor-unvalid {
+    background-position: 0 -655px;
+    width: 105px;
+}
+
+.toclass-btn-area {
+    _zoom: 1;
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.toclass-btn-area .tospan {
+    font-size: 12px;
+    color: #999;
+    padding-right: 6px;
+    height: 28px;
+    display: inline-block;
+}
+
+.to-btn-area {
+    display: inline-block;
+}
+
+
+.toclass-btn {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    line-height: 30px\9;
+    display: inline-block;
+    margin-right: 3px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.toclass-btn-unvalid {
+    background-position: 0 -469px;
+}
+

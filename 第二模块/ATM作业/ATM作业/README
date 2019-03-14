@@ -1,0 +1,37 @@
+作者:Irving Xu
+版本:版本 v2.1
+程序介绍:
+    实现ATM常用功能
+    功能全部用python的基础知识实现,用到了time\os\sys\json\open\logging\函数\模块知识.
+    程序入口有三个：分别是'ATM'入口、'shopping_cart'入口和'管理员'入口， 都在bin目录下
+    测试账号密码： admin:admin     alex:abc123     egon:abc1234
+
+程序目录：
+ATM作业/
+├── README
+├── ATM作业 #ATM主程目录
+│   ├── __init__.py
+│   ├── acount  #用户数据存储的地方(json)
+│   │   ├── __init__.py
+│   │   ├── admin.json #存储管理员账号信息文件
+│   │   └── alex.json # 存alex用户的账户数据 ,一个用户一个文件
+│   │   └── egon.json # 存egon用户的账户数据 ,一个用户一个文件
+│   ├── bin #ATM 执行文件 目录
+│   │   ├── __init__.py
+│   │   ├── ATM_start.py  #ATM 执行程序
+│   │   └── manager.py #ATM 管理端
+│   │   └── shopping_cart.py #购物车执行程序
+│   ├── conf #配置文件
+│   │   ├── __init__.py
+│   │   └── settings.py     # 存放着程序的配置
+│   ├── core #主要程序逻辑都 在这个目录 里
+│   │   ├── __init__.py
+│   │   ├── auth.py      #用户认证模块（装饰器实现）
+│   │   ├── db_handler.py   #模拟数据库操作模块
+│   │   ├── logger.py       #日志记录模块
+│   │   ├── main.py         #atm主逻辑程序
+│   │   └── manager_handler  #管理员操作模块
+│   └── log #日志目录
+│       ├── __init__.py
+│       ├── atm.log     #ATM程序登陆、转账、提现等操作的日志文件
+│       ├── admin.log     #管理员日常操作的日志文件
